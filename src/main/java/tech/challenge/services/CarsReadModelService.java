@@ -35,5 +35,4 @@ public class CarsReadModelService {
     public List<CarReadModelEntity> findAllSold() {
         return CarReadModelEntity.list("status = ?1 order by price asc", CarStatus.SOLD);
     }
-
 }
